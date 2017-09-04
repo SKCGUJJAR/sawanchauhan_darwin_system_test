@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_receive"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#fff"
+    tools:context="dizs.dizs.darwin.Receive">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+        <Button
+            android:layout_width="32dp"
+            android:layout_height="24dp"
+            android:id="@+id/menu"
+            android:background="@drawable/backicon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:paddingLeft="15dp"
+            android:text="RECEIVE"
+            android:gravity="center"
+            android:textSize="25dp"
+            />
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:id="@+id/rect1"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar2"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="YOUR ETHERNUM OR QO CODE"
+            android:textColor="#000"
+            android:id="@+id/statusview"
+            android:layout_centerHorizontal="true" ></TextView>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:inputType="textPassword"
+            android:id="@+id/editText1"
+            android:layout_marginLeft="40dp"
+
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/editText2"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/statusview"
+            android:background="@drawable/editfild"
+            android:layout_marginRight="40dp"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="YOUR ETHERNUM ADDRESS"
+        android:textColor="#000"
+        android:id="@+id/addressqr"
+        android:layout_above="@+id/addresssqr"
+        android:layout_centerHorizontal="true" >
+
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addresssqr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/editfild"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/copy"
+        android:layout_marginRight="10dp"
+        android:text="0x3635774825368dd25"
+        android:textColor="#000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/rect2"/>
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/copy"
+        android:background="@drawable/copyicon"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
